@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feloblendz Barber Booking</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Font Awesome CSS CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <style>
+    body {
+      margin: 0;
+      font-family: "Rubik", sans-serif;
+      background: #1a1a1a;
+      color: #f2f2f2;
+    }
+    header {
+      background: #111;
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+    }
+    header .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+    header img {
+      width: 120px;
+      border-radius: 50%;
+    }
+    header .header-content h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+    header .header-content .header-instagram {
+      color: #f2f2f2;
+      font-size: 1.8rem;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    header .header-content .header-instagram:hover {
+      color: #e91e63;
+    }
+    header p {
+      margin-top: 0.8rem;
+      color: #aaa;
+      font-size: 1rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #222;
+      padding: 0.75rem 0;
+    }
+    nav a {
+      color: #f2f2f2;
+      text-decoration: none;
+      margin: 0 1.2rem;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h2 {
+      border-left: 4px solid #e91e63;
+      padding-left: 0.6rem;
+      color: #e91e63;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li {
+      background: #2c2c2c;
+      margin: 0.5rem 0;
+      padding: 0.75rem;
+      border-radius: 8px;
+    }
+    .contact p,
+    .services p {
+      margin-top: 1rem;
+      color: #ccc;
+    }
+    .social-icons a {
+      color: #f2f2f2;
+      margin: 0 0.5rem;
+      font-size: 1.5rem;
+    }
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    @media (max-width: 600px) {
+      nav a {
+        margin: 0 0.6rem;
+        font-size: 0.9rem;
+      }
+      header .header-content h1 {
+        font-size: 1.7rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="feloblendz-logo.png" alt="Feloblendz Logo" />
+      <h1>Feloblendz</h1>
+      <a
+        href="https://www.instagram.com/feloblendz"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="header-instagram"
+        ><i class="fab fa-instagram"></i
+      ></a>
+    </div>
+    <p>Street-Style Cuts. Clean Fades. Book Your Spot.</p>
+  </header>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#booking">Booking</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <section id="services" class="services">
+      <h2>Services</h2>
+      <ul>
+        <li>Cut – $10</li>
+      </ul>
+      <p>
+        <strong>Payment:</strong> All payments are made in person after your
+        appointment.
+      </p>
+    </section>
+
+    <section id="booking">
+      <h2>Book an Appointment</h2>
+      <div 
+        class="calendly-inline-widget" 
+        data-url="https://calendly.com/feloblendzz" 
+        style="min-width:320px; height:600px;">
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact & Location</h2>
+      <p>📍 4005 Meadow Knoll Lane, Mt Juliet, TN 37122</p>
+      <p>📞 (629) 237-9652</p>
+      <div class="social-icons">
+        <a
+          href="https://www.instagram.com/feloblendz"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Feloblendz. All rights reserved.</p>
+    <div class="social-icons">
+      <a
+        href="https://www.instagram.com/feloblendz"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><i class="fab fa-instagram"></i
+      ></a>
+    </div>
+  </footer>
+
+  <!-- Calendly Widget Script -->
+  <script 
+    type="text/javascript" 
+    src="https://assets.calendly.com/assets/external/widget.js" 
+    async>
+  </script>
+</body>
+</html>
